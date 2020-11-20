@@ -4,8 +4,6 @@ metadata:
  name: guestbook-filesilver-pvc
  labels:
    billingType: hourly
-   region: us-south
-   zone: dal10
 spec:
  accessModes:
    - ReadWriteMany
