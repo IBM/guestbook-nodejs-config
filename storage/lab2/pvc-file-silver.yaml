@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+ name: guestbook-filesilver-pvc
+ labels:
+   billingType: hourly
+spec:
+ accessModes:
+   - ReadWriteMany
+ resources:
+   requests:
+     storage: 20Gi
+ storageClassName: ibmc-file-silver
