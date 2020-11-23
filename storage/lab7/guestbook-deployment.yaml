@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: jzaccone/guestbook-nodejs:cloudant
+        image: [IMAGE_NAME]/guestbook-nodejs:cloudant
         resources:
           requests:
             cpu: 100m
@@ -30,4 +30,4 @@ spec:
               name: binding-cloudant
               key: url
         - name : CLOUDANT_DB
-          value: "test"
+          value: "[DB_NAME]"
