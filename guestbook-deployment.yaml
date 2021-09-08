@@ -22,7 +22,7 @@ spec:
           limits:
             cpu: 1
             memory: 512M
-        image: <DockerUsername>/guestbook-nodejs:mongo
+        image: odrodrig/guestbook-nodejs:mongo
         imagePullPolicy: Always
         ports:
         - name: http-server
